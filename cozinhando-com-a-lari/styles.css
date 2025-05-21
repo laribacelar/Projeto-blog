@@ -1,0 +1,173 @@
+body {
+  background-color: #fce8eb;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0 20px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.logo {
+  width: 260px;
+  border-radius: 60px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+nav ul.menu {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0 0 30px;
+  gap: 30px;
+  font-family: cursive;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: #d36c8b;
+  font-weight: bold;
+  font-size: 20px;
+  transition: color 0.3s ease;
+}
+
+.menu li a:hover {
+  color: #a94c70;
+}
+
+.container-principal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.img-principal {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 60px;
+}
+
+.sobre {
+  text-align: center;
+  font-family: cursive;
+  padding: 0 30px 50px;
+}
+
+.sobre h2 {
+  text-align: center;
+  color: #d36c8b;
+}
+
+.receitas-destaque {
+  text-align: center;
+}
+
+.receitas-destaque h1 {
+  margin-bottom: 20px;
+  color: #a94c70;
+}
+
+.destaque {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.foto-destaque {
+  width: 260px;
+  border-radius: 30px;
+  padding: 10px;
+  transition: transform 0.3s ease;
+}
+
+.foto-destaque:hover {
+  transform: scale(1.05);
+}
+
+footer {
+  background-color: rgba(240, 177, 212, 0.5);
+  padding: 30px;
+  text-align: center;
+  font-family: cursive;
+  border-top: 2px solid rgba(240, 177, 212, 0.8);
+}
+
+.footer-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+/* Botão hamburguer (menu mobile) */
+.menu-toggle {
+  display: none;
+  font-size: 30px;
+  background: none;
+  border: none;
+  color: #d36c8b;
+  cursor: pointer;
+  padding: 10px 20px;
+}
+
+/* Estilo base do menu */
+.nav-menu {
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fce8eb;
+    padding: 10px 0;
+    border-top: 1px solid #d36c8b;
+  }
+
+  .nav-menu.ativo {
+    display: flex;
+  }
+
+  .menu {
+    flex-direction: column;
+    gap: 15px;
+    margin: 0;
+  }
+
+  .foto-destaque {
+    width: 80%;
+  }
+
+  .img-principal {
+    width: 90%;
+  }
+
+  .destaque {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .sobre {
+    padding: 20px;
+  }
+}

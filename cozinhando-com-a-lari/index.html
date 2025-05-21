@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cozinhando com a Lari</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="img-container">
+        <img
+          class="logo"
+          src="assets/logo.png"
+          alt="Logo Cozinhando com a Lari"
+        />
+      </div>
+      <button class="menu-toggle" aria-label="Abrir menu">&#9776;</button>
+      <nav class="nav-menu">
+        <ul class="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="doces.html">Doces</a></li>
+          <li><a href="salgados.html">Salgados</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="container-principal">
+        <img
+          class="img-principal"
+          src="assets/brigadeirão.png"
+          alt="Brigadeirão"
+        />
+      </section>
+
+      <section class="sobre">
+        <h2>Sobre</h2>
+        <p>
+          Sou a Larissa, apaixonada por cozinhar e compartilhar sabores que
+          aquecem o coração. Aqui você encontra receitas testadas, simples e
+          cheias de carinho.
+        </p>
+      </section>
+
+      <section class="receitas-destaque">
+        <h1>Receitas em destaque:</h1>
+        <ul class="destaque">
+          <li>
+            <a href="doces.html"
+              ><img
+                class="foto-destaque"
+                src="assets/bolo-cenoura.png"
+                alt="Bolo de cenoura"
+            /></a>
+          </li>
+          <li>
+            <a href="salgados.html"
+              ><img
+                class="foto-destaque"
+                src="assets/challah.jpg"
+                alt="Pão Challah"
+            /></a>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-container">
+        <p>&copy; 2025 Larissa's Kitchen. Todos os direitos reservados.</p>
+      </div>
+    </footer>
+
+    <script>
+      const toggle = document.querySelector(".menu-toggle");
+      const menu = document.querySelector(".nav-menu");
+
+      toggle.addEventListener("click", () => {
+        menu.classList.toggle("ativo");
+      });
+    </script>
+  </body>
+</html>
