@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cozinhando com a Lari</title>
     <link rel="stylesheet" href="styles.css" />
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
   </head>
   <body>
     <header>
@@ -18,14 +23,15 @@
       <button class="menu-toggle" aria-label="Abrir menu">&#9776;</button>
       <nav class="nav-menu">
         <ul class="menu">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="doces.html">Doces</a></li>
-          <li><a href="salgados.html">Salgados</a></li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#doces">Doces</a></li>
+          <li><a href="#salgados">Salgados</a></li>
         </ul>
       </nav>
     </header>
+
     <main>
-      <section class="container-principal">
+      <section id="home" class="container-principal">
         <img
           class="img-principal"
           src="assets/brigadeirão.png"
@@ -42,28 +48,89 @@
         </p>
       </section>
 
-      <section class="receitas-destaque">
-        <h1>Receitas em destaque:</h1>
-        <ul class="destaque">
-          <li>
-            <a href="doces.html"
-              ><img
-                class="foto-destaque"
-                src="assets/bolo-cenoura.png"
-                alt="Bolo de cenoura"
-            /></a>
-          </li>
-          <li>
-            <a href="salgados.html"
-              ><img
-                class="foto-destaque"
-                src="assets/challah.jpg"
-                alt="Pão Challah"
-            /></a>
-          </li>
-        </ul>
+      <section id="doces" class="doce">
+        <h1 class="h1">Bolo de Cenoura</h1>
+        <div class="imagem-centro">
+          <img
+            src="assets/bolo-cenoura.png"
+            alt="Bolo de Cenoura"
+            class="imagem-receita"
+          />
+        </div>
+        <div class="receita-container">
+          <div class="ingredientes">
+            <h3>Ingredientes:</h3>
+            <ul>
+              <li>2 xícaras de cenoura picada</li>
+              <li>4 ovos</li>
+              <li>1 xícara de óleo</li>
+              <li>2 xícaras de açúcar</li>
+              <li>2 xícaras de farinha de trigo peneirada</li>
+              <li>1 1/2 colher de fermento para bolo</li>
+            </ul>
+          </div>
+          <div class="preparo">
+            <h3>Modo de Preparo:</h3>
+            <ol>
+              <li>
+                Bata no liquidificador a cenoura, os ovos, o óleo e o açúcar por
+                5 minutos.
+              </li>
+              <li>
+                Despeje o conteúdo em uma travessa e misture o trigo e o
+                fermento.
+              </li>
+              <li>
+                Asse em forno médio até dourar ou até o palito sair limpo.
+              </li>
+            </ol>
+          </div>
+        </div>
+      </section>
+
+      <section id="salgados" class="doce">
+        <h1 class="h1">Challah</h1>
+        <div class="imagem-centro">
+          <img src="assets/challah.jpg" alt="Challah" class="imagem-receita" />
+        </div>
+        <div class="receita-container">
+          <div class="ingredientes">
+            <h3>Ingredientes:</h3>
+            <ul>
+              <li>450ml de água morna</li>
+              <li>1kg de trigo</li>
+              <li>1 ovo</li>
+              <li>20g de fermento biológico seco</li>
+              <li>50g de açúcar</li>
+              <li>10g de sal</li>
+              <li>120ml de óleo</li>
+              <li>1 gema para pincelar</li>
+              <li>Gergelim para decorar</li>
+            </ul>
+          </div>
+          <div class="preparo">
+            <h3>Modo de Preparo:</h3>
+            <ol>
+              <li>Misture a água morna com o fermento.</li>
+              <li>Acrescente o ovo, óleo, açúcar e o sal e misture.</li>
+              <li>
+                Por último, acrescente o trigo e misture, sove até desgrudar das
+                mãos.
+              </li>
+              <li>
+                Deixe descansar por 1 hora, modele em trança e deixe crescer
+                novamente.
+              </li>
+              <li>
+                Pincele com gema, salpique gergelim e asse em forno médio até
+                dourar.
+              </li>
+            </ol>
+          </div>
+        </div>
       </section>
     </main>
+
     <footer>
       <div class="footer-container">
         <p>&copy; 2025 Larissa's Kitchen. Todos os direitos reservados.</p>
