@@ -1,9 +1,13 @@
-body {
-  background-color: #fce8eb;
-  font-family: Arial, Helvetica, sans-serif;
-  line-height: 1.6;
+* {
+  font-family: "Roboto Slab", serif;
+  scroll-behavior: smooth;
   margin: 0;
-  padding: 0 20px;
+  padding: 0;
+  line-height: 1.6;
+}
+
+body {
+  background-color: #f8f0f2;
 }
 
 img {
@@ -31,7 +35,6 @@ nav ul.menu {
   padding: 0;
   margin: 0 0 30px;
   gap: 30px;
-  font-family: cursive;
 }
 
 .menu li a {
@@ -61,43 +64,12 @@ nav ul.menu {
 
 .sobre {
   text-align: center;
-  font-family: cursive;
   padding: 0 30px 50px;
 }
 
 .sobre h2 {
   text-align: center;
   color: #d36c8b;
-}
-
-.receitas-destaque {
-  text-align: center;
-}
-
-.receitas-destaque h1 {
-  margin-bottom: 20px;
-  color: #a94c70;
-}
-
-.destaque {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  list-style: none;
-  padding: 0;
-  gap: 60px;
-  flex-wrap: wrap;
-}
-
-.foto-destaque {
-  width: 260px;
-  border-radius: 30px;
-  padding: 10px;
-  transition: transform 0.3s ease;
-}
-
-.foto-destaque:hover {
-  transform: scale(1.05);
 }
 
 footer {
@@ -154,10 +126,6 @@ footer {
     margin: 0;
   }
 
-  .foto-destaque {
-    width: 80%;
-  }
-
   .img-principal {
     width: 90%;
   }
@@ -169,6 +137,10 @@ footer {
 
   .sobre {
     padding: 20px;
+  }
+  .doce {
+    display: flex;
+    align-items: flex-start;
   }
 }
 img {
