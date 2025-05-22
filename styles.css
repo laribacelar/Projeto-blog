@@ -138,10 +138,6 @@ footer {
   .sobre {
     padding: 20px;
   }
-  .doce {
-    display: flex;
-    align-items: flex-start;
-  }
 }
 img {
   max-width: 100%;
